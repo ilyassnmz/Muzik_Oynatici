@@ -20,4 +20,4 @@ Kullanıcılar şarkıları dinleyebilir, favori ekleyebilir, ses seviyesini aya
 
 ## 📸 Ekran Görüntüsü
 
-![Ana Sayfa Görseli](img/MainPage.jpg)
+![Ana Sayfa Görseli](img/Anasayfa.jpg)
