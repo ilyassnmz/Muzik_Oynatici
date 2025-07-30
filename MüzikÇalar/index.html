@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Müzik Oynatıcı</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+  />
+  <link rel="shortcut icon" href="#" />
+</head>
+<body>
+  <div class="container">
+    <div class="mainDiv">
+      <div class="imgDiv">
+        <img src="img/Kenan.jpg" alt="Müzik Kapak" />
+      </div>
+
+      <div class="titleDiv">
+        <div class="titleMeta">
+          <div>
+            <h2 class="title" id="title">Ara Beni Lütfen</h2>
+            <h3 class="creator" id="creator">Kenan Doğulu</h3>
+          </div>
+          <button class="likeBtn" id="likeBtn" aria-label="Favorilere ekle / çıkar">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+      </div>
+
+      <audio src="music/KenanDogulu.mp3"></audio>
+
+      <div class="progressDiv" id="progressDiv">
+        <div class="progress" id="progress"></div>
+        <div class="timeDiv">
+          <span id="currentTime">0:00</span>
+          <span id="totalTime">0:00</span>
+        </div>
+      </div>
+
+      <div class="musicControlDiv">
+        <i class="icon fa-solid fa-backward" id="prev"></i>
+        <i class="icon fa-solid fa-play" id="play"></i>
+        <i class="icon fa-solid fa-forward" id="next"></i>
+      </div>
+      <div class="volumeDiv">
+        <i class="fa-solid fa-volume-low"></i>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+        <i class="fa-solid fa-volume-high"></i>
+      </div>
+    </div>
+    <div class="playlistDiv">
+      <h3>Playlist</h3>
+      <ul id="playlist"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
